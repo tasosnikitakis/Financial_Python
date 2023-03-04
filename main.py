@@ -16,10 +16,10 @@ end_date = "2019–11–30"
 #data = pdr.get_data_yahoo("AAPL", start="2020-01-01", end=today)
 
 
-#tickers = ["MSFT", "PG", "U", "AAPL"]
-#new_data = pd.DataFrame()
-#for t in tickers:
-#    new_data[t] = pdr.get_data_yahoo(t, start="2020-01-01", end=today)["Adj Close"]
+tickers = ["MSFT", "PG", "U", "AAPL"]
+new_data = pd.DataFrame()
+for t in tickers:
+    new_data[t] = pdr.get_data_yahoo(t, start="2020-01-01", end=today)["Adj Close"]
 
 
 
@@ -78,4 +78,5 @@ portfolio_rate_of_return = str(round(dot_calculation, 5) * 100) + "%"
 print(portfolio_rate_of_return)
 
 
-#market indexes
+
+
